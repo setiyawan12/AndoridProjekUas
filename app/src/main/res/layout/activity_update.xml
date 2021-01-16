@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    tools:context="yayang.setiyawan.uasmobile.CreateTourismActivity">
+    tools:context="yayang.setiyawan.uasmobile.UpdateActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Input New Tourism"
+            android:text="Update Tourism"
             android:textStyle="bold"
             android:textSize="30sp"
             android:layout_marginBottom="5dp"/>
@@ -27,6 +27,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:outlineAmbientShadowColor="@color/teal_200"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/inIdTourism"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            app:errorEnabled="true"
+            app:boxStrokeColor="@color/teal_200"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/etIdTourism"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -76,11 +92,11 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnSave"
+            android:id="@+id/btnUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Save" />
+            android:text="Update" />
     </LinearLayout>
 
 </LinearLayout>
